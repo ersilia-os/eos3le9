@@ -1,9 +1,9 @@
 {
-    "Identifier": "",
-    "Slug": "",
-    "Status": "",
-    "Title": "",
-    "Description": "",
+    "Identifier": "eos3le9",
+    "Slug": "hepg2-mmv",
+    "Status": "In progress",
+    "Title": "HepG2 Toxicity - MMV",
+    "Description": "This model predicts the toxicity of small molecules in HepG2 cells. It has been developed by Ersilia thanks to data provided by MMV. We have used two cut-offs to define activity (5 and 10 uM respectively) with a dataset of 1335 molecules. 5-fold crossvalidation showed an AUROC of 0.8 and 0.77 respectively",
     "Mode": "",
     "Task": [],
     "Input": [],
@@ -12,8 +12,11 @@
     "Output Type": [],
     "Output Shape": "",
     "Interpretation": "",
-    "Tag": [],
-    "Publication": "",
-    "Source Code": "",
-    "License": ""
+    "Tag": [
+        "Toxicity",
+        "Human"
+    ],
+    "Publication": "https://ersilia.io",
+    "Source Code": "https://github.com/ersilia-os/lazy-qsar",
+    "License": "GPL-3.0"
 }
