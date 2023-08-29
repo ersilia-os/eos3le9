@@ -1,3 +1,43 @@
-# Ersilia Model In Progress
+# HepG2 Toxicity - MMV
 
-This model is work in progress. Please edit the [metadata.json](metadata.json) file to complete the information about the model. This README file will be updated automatically based on the information contained in that folder.
+This model predicts the toxicity of small molecules in HepG2 cells. It has been developed by Ersilia thanks to data provided by MMV. We have used two cut-offs to define activity (5 and 10 uM respectively) with a dataset of 1335 molecules. 5-fold crossvalidation showed an AUROC of 0.8 and 0.77 respectively
+
+## Identifiers
+
+* EOS model ID: `eos3le9`
+* Slug: `hepg2-mmv`
+
+## Characteristics
+
+* Input: `Compound`
+* Input Shape: `Single`
+* Task: `Classification`
+* Output: `Probability`
+* Output Type: `Float`
+* Output Shape: `Single`
+* Interpretation: Probability of toxicity in HepG2 cells. Cut-offs: 5 and 10 uM
+
+## References
+
+* [Publication](https://ersilia.io)
+* [Source Code](https://github.com/ersilia-os/lazy-qsar)
+* Ersilia contributor: [GemmaTuron](https://github.com/GemmaTuron)
+
+## Ersilia model URLs
+* [GitHub](https://github.com/ersilia-os/eos3le9)
+
+## Citation
+
+If you use this model, please cite the [original authors](https://ersilia.io) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
+
+## License
+
+This package is licensed under a GPL-3.0 license. The model contained within this package is licensed under a GPL-3.0 license.
+
+Notice: Ersilia grants access to these models 'as is' provided by the original authors, please refer to the original code repository and/or publication if you use the model in your research.
+
+## About Us
+
+The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
+
+[Help us](https://www.ersilia.io/donate) achieve our mission!
