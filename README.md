@@ -14,7 +14,7 @@ This model predicts the toxicity of small molecules in HepG2 cells. It has been 
 * Task: `Classification`
 * Output: `Probability`
 * Output Type: `Float`
-* Output Shape: `Single`
+* Output Shape: `List`
 * Interpretation: Probability of toxicity in HepG2 cells. Cut-offs: 5 and 10 uM
 
 ## References

@@ -18,7 +18,7 @@
     "Output Type": [
         "Float"
     ],
-    "Output Shape": "Single",
+    "Output Shape": "List",
     "Interpretation": "Probability of toxicity in HepG2 cells. Cut-offs: 5 and 10 uM",
     "Tag": [
         "Toxicity",
