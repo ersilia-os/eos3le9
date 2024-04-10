@@ -26,7 +26,7 @@ This model predicts the toxicity of small molecules in HepG2 cells. It has been 
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos3le9)
 * [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3le9.zip)
-* [DockerHub](https://hub.docker.com/r/ersiliaos/eos3le9) (AMD64, ARM64)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos3le9) (AMD64)
 
 ## Citation
 
