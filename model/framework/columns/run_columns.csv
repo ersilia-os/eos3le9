@@ -1,3 +1,3 @@
-name	type	direction	description
-HepG2_IC50_72h_5uM	float	high	Classification score for HepG2 citotoxicity based on an IC50 cut-off of 5uM
-HepG2_IC50_72h_10uM	float	high	Classification score for HepG2 citotoxicity based on an IC50 cut-off of 10uM
+name,type,direction,description
+HepG2_IC50_72h_5uM,float,high,Classification score for HepG2 citotoxicity based on an IC50 cut-off of 5uM
+HepG2_IC50_72h_10uM,float,high,Classification score for HepG2 citotoxicity based on an IC50 cut-off of 10uM
