@@ -3,21 +3,18 @@
     "Slug": "hepg2-mmv",
     "Status": "Ready",
     "Title": "HepG2 Toxicity (MMV Data)",
-    "Description": "This model predicts the toxicity of small molecules in HepG2 cells. It has been developed by Ersilia thanks to data provided by Medicines for Malaria Venture (MMV). The dataset comprises IC50 data for 1335 molecules. We have used two cut-offs to define activity (5 and 10 uM respectively). 5-fold cross-validation with a 80/20 train/test split showed an AUROC of 0.8 and 0.77 respectively. \n",
+    "Description": "This model predicts the toxicity of small molecules in HepG2 cells. It has been developed by Ersilia thanks to data provided by Medicines for Malaria Venture (MMV). The dataset comprises IC50 data for 1335 molecules. We have used two cut-offs to define activity (5 and 10 uM respectively). 5-fold cross-validation with a 80/20 train/test split showed an AUROC of 0.8 and 0.77 respectively. ",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Local",
     "Source Type": "Internal",
+    "Task": "Annotation",
+    "Subtask": "Activity prediction",
     "Input": [
         "Compound"
     ],
     "Input Dimension": 1,
-    "Task": "Annotation",
-    "Subtask": "Activity prediction",
-    "Biomedical Area": [
-        "ADMET"
-    ],
-    "Target Organism": [
-        "Homo sapiens"
-    ],
     "Output": [
         "Probability"
     ],
@@ -28,19 +25,24 @@
         "Toxicity",
         "Human"
     ],
-    "Publication": "https://ersilia.io",
+    "Biomedical Area": [
+        "ADMET"
+    ],
+    "Target Organism": [
+        "Homo sapiens"
+    ],
     "Publication Type": "Other",
     "Publication Year": 2023,
+    "Publication": "https://ersilia.io",
     "Source Code": "https://github.com/ersilia-os/lazy-qsar",
     "License": "GPL-3.0-or-later",
     "Contributor": "GemmaTuron",
     "Incorporation Date": "2023-08-24",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3le9.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos3le9",
     "Docker Architecture": [
         "AMD64"
     ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3le9.zip",
-    "Deployment": [
-        "Local"
-    ]
+    "Model Size": 5.0,
+    "Environment Size": 7552.0
 }
