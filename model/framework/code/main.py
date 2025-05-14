@@ -36,6 +36,6 @@ output1, output2 = my_model(smiles_list)
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["HepG2_IC50_72h_5uM", "HepG2_IC50_72h_10uM"])  # header with column names
+    writer.writerow(["HepG2_IC50_72h_5uM".lower(), "HepG2_IC50_72h_10uM".lower()])  # header with column names
     for o1, o2, in zip(output1, output2):
         writer.writerow([o1, o2])
