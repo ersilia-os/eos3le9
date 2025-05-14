@@ -40,9 +40,13 @@
     "Incorporation Date": "2023-08-24",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3le9.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos3le9",
-    "Docker Architecture": [
-        "AMD64"
-    ],
+    "Docker Architecture": "AMD64",
     "Model Size": 5.0,
-    "Environment Size": 7552.0
+    "Environment Size": 7552.0,
+    "Image Size": 7394.8,
+    "Computational Performance 1": 38.15,
+    "Computational Performance 2": 27.84,
+    "Computational Performance 3": 28.08,
+    "Computational Performance 4": 139.32,
+    "Computational Performance 5": 642.96
 }
