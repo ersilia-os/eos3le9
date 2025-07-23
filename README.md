@@ -2,8 +2,7 @@
 
 This model predicts the toxicity of small molecules in HepG2 cells. It has been developed by Ersilia thanks to data provided by Medicines for Malaria Venture (MMV). The dataset comprises IC50 data for 1335 molecules. We have used two cut-offs to define activity (5 and 10 uM respectively). 5-fold cross-validation with a 80/20 train/test split showed an AUROC of 0.8 and 0.77 respectively. 
 
-This model was incorporated on 2023-08-24.
-
+This model was incorporated on 2023-08-24.Last packaged on 2025-07-23.
 
 ## Information
 ### Identifiers
@@ -37,18 +36,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `Internal`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos3le9](https://hub.docker.com/r/ersiliaos/eos3le9)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3le9.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3le9.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `20`
 - **Environment Size (Mb):** `6518`
-- **Image Size (Mb):** `7394.8`
+- **Image Size (Mb):** `6378.03`
 
 **Computational Performance (seconds):**
-- 10 inputs: `38.15`
-- 100 inputs: `28.08`
-- 10000 inputs: `642.96`
+- 10 inputs: `41.18`
+- 100 inputs: `51.79`
+- 10000 inputs: `553.72`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-qsar](https://github.com/ersilia-os/lazy-qsar)
