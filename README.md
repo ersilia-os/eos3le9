@@ -28,8 +28,8 @@ This model was incorporated on 2023-08-24.Last packaged on 2025-07-23.
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| hepg2_ic50_72h_5um | float | high | Classification score for HepG2 cytotoxicity based on an IC50 cut-off of 5uM |
-| hepg2_ic50_72h_10um | float | high | Classification score for HepG2 cytotoxicity based on an IC50 cut-off of 10uM |
+| ic50_hepg2_72h_5um | float | high | Classification score for HepG2 cytotoxicity based on an IC50 cut-off of 5uM |
+| ic50_hepg2_72h_10um | float | high | Classification score for HepG2 cytotoxicity based on an IC50 cut-off of 10uM |
 
 
 ### Source and Deployment
