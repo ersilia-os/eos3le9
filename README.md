@@ -1,6 +1,6 @@
 # HepG2 Toxicity (MMV Data)
 
-This model predicts the toxicity of small molecules in HepG2 cells. It has been developed by Ersilia thanks to data provided by Medicines for Malaria Venture (MMV). The dataset comprises IC50 data for 1335 molecules. We have used two cut-offs to define activity (5 and 10 uM respectively). 5-fold cross-validation with a 80/20 train/test split showed an AUROC of 0.8 and 0.77 respectively. 
+This model predicts the toxicity of small molecules in HepG2 cells. It has been developed by Ersilia thanks to data provided by Medicines for Malaria Venture (MMV). The dataset comprises IC50 data for 1335 molecules upon 72h incubation period. We have used two cut-offs to define activity (5 and 10 uM respectively). The models have been trained with LazyQSAR and achieve a performance of AUROC 0.85 and 0.75 upon 3-fold crossvalidation. 
 
 This model was incorporated on 2023-08-24.Last packaged on 2025-07-23.
 
