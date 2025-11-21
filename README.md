@@ -2,7 +2,7 @@
 
 This model predicts the toxicity of small molecules in HepG2 cells. It has been developed by Ersilia thanks to data provided by Medicines for Malaria Venture (MMV). The dataset comprises IC50 data for 1335 molecules upon 72h incubation period. We have used two cut-offs to define activity (5 and 10 uM respectively). The models have been trained with LazyQSAR and achieve a performance of AUROC 0.85 and 0.75 upon 3-fold crossvalidation. 
 
-This model was incorporated on 2023-08-24.Last packaged on 2025-07-23.
+This model was incorporated on 2023-08-24.Last packaged on 2025-11-21.
 
 ## Information
 ### Identifiers
@@ -42,12 +42,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `11`
 - **Environment Size (Mb):** `7610`
-- **Image Size (Mb):** `6378.03`
+- **Image Size (Mb):** `7505.03`
 
 **Computational Performance (seconds):**
-- 10 inputs: `41.18`
-- 100 inputs: `51.79`
-- 10000 inputs: `553.72`
+- 10 inputs: `44.9`
+- 100 inputs: `46.71`
+- 10000 inputs: `604.6`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-qsar](https://github.com/ersilia-os/lazy-qsar)
