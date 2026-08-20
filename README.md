@@ -1,6 +1,6 @@
 # HepG2 Toxicity (MMV Data)
 
-This model predicts the toxicity of small molecules in HepG2 cells. It has been developed by Ersilia thanks to data provided by Medicines for Malaria Venture (MMV). The dataset comprises IC50 data for 1335 molecules upon 72h incubation period. We have used two cut-offs to define activity (5 and 10 uM respectively). The models have been trained with LazyQSAR and achieve a performance of AUROC 0.85 and 0.75 upon 3-fold crossvalidation. 
+Predicts cytotoxicity in HepG2 liver carcinoma cells, the standard counter-screen for distinguishing genuine antiparasitic activity from general cell killing. Ersilia trained the models on IC50 measurements for 1,335 compounds after 72 hours of exposure, contributed by Medicines for Malaria Venture, applying two thresholds so that moderate and pronounced toxicity are separated. A single cell line reports direct cytotoxicity and does not anticipate organ-level or metabolism-dependent toxicity.
 
 This model was incorporated on 2023-08-24.Last packaged on 2025-11-21.
 
@@ -14,7 +14,7 @@ This model was incorporated on 2023-08-24.Last packaged on 2025-11-21.
 - **Subtask:** `Activity prediction`
 - **Biomedical Area:** `ADMET`
 - **Target Organism:** `Homo sapiens`
-- **Tags:** `Toxicity`, `Human`
+- **Tags:** `Toxicity`
 
 ### Input
 - **Input:** `Compound`
@@ -23,7 +23,7 @@ This model was incorporated on 2023-08-24.Last packaged on 2025-11-21.
 ### Output
 - **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of toxicity in HepG2 cells. Cut-offs: 5 and 10 uM
+- **Interpretation:** Probability of HepG2 cytotoxicity at IC50 cut-offs of 5 and 10 uM.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
