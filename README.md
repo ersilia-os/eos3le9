@@ -2,7 +2,8 @@
 
 Predicts cytotoxicity in HepG2 liver carcinoma cells, the standard counter-screen for separating genuine antiparasitic activity from general cell killing. Ersilia trained two LazyQSAR classifiers on IC50 measurements for 1,335 compounds after a 72-hour exposure, contributed by Medicines for Malaria Venture, one calling toxicity below 5 uM and the other below 10 uM, reaching AUROCs of 0.85 and 0.75 in three-fold cross-validation. A single cell line does not anticipate organ-level or metabolism-dependent toxicity.
 
-This model was incorporated on 2023-08-24.Last packaged on 2025-11-21.
+This model was incorporated on 2023-08-24.
+Last packaged on 2025-11-21.
 
 ## Information
 ### Identifiers
@@ -38,6 +39,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos3le9](https://hub.docker.com/r/ersiliaos/eos3le9)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3le9.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3le9.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos3le9_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos3le9_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `11`
