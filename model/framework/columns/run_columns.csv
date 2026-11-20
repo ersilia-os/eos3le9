@@ -1,3 +1,3 @@
 name,type,direction,description
-ic50_hepg2_72h_5um,float,high,Classification score for HepG2 cytotoxicity based on an IC50 cut-off of 5uM
-ic50_hepg2_72h_10um,float,high,Classification score for HepG2 cytotoxicity based on an IC50 cut-off of 10uM
+ic50_hepg2_72h_5um_rank,float,high,"Rank score of the compound's predicted HepG2 cytotoxicity at an IC50 cut-off of 5 uM (72 h), calibrated against a reference library of 50K drug-like molecules so that 0.65 is more toxic than 99% of them. Recommended threshold: 0.65."
+ic50_hepg2_72h_10um_rank,float,high,"Rank score of the compound's predicted HepG2 cytotoxicity at an IC50 cut-off of 10 uM (72 h), calibrated against a reference library of 50K drug-like molecules so that 0.65 is more toxic than 99% of them. Recommended threshold: 0.65."

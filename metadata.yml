@@ -1,0 +1,56 @@
+Identifier: eos3le9
+Slug: hepg2-mmv
+Status: Ready
+Title: HepG2 Toxicity (MMV Data)
+Description: Predicts cytotoxicity in HepG2 liver carcinoma cells, the standard counter-
+  screen for separating genuine antiparasitic activity from general cell
+  killing. Ersilia trained two LazyQSAR classifiers on 72-hour IC50 data for
+  1,335 compounds from Medicines for Malaria Venture, calling toxicity below 5
+  uM (104 toxic) or 10 uM (746 toxic), with AUROC 0.88 and 0.79 in five-fold
+  out-of-fold validation. Outputs are ranks against 50,000 drug-like molecules.
+  A single cell line does not anticipate organ-level or metabolism-dependent
+  toxicity.
+Deployment:
+  - Local
+Source: Local
+Source Type: Internal
+Task: Annotation
+Subtask: Activity prediction
+Input:
+  - Compound
+Input Dimension: 1
+Output:
+  - Score
+Output Dimension: 2
+Output Consistency: Fixed
+Interpretation: Rank of predicted HepG2 cytotoxicity at IC50 cut-offs of 5 and 10 uM, against
+  50,000 drug-like molecules; 0.65 is more toxic than 99% of them.
+Tag:
+  - Toxicity
+Biomedical Area:
+  - ADMET
+Target Organism:
+  - Homo sapiens
+Publication Type: Other
+Publication Year: 2023
+Publication: https://ersilia.io
+Source Code: https://github.com/ersilia-os/lazy-qsar
+License: GPL-3.0-or-later
+Contributor: GemmaTuron
+Incorporation Date: '2023-08-24'
+Last Packaging Date: '2025-11-21'
+Release: v1.0.2
+S3: https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos3le9.zip
+DockerHub: https://hub.docker.com/r/ersiliaos/eos3le9
+Docker Architecture:
+  - AMD64
+  - ARM64
+Apptainer: https://models-sif.s3.eu-north-1.amazonaws.com/eos3le9_v1.sif
+Model Size: 11.0
+Environment Size: 7610.0
+Image Size: 7505.03
+Computational Performance 1: 44.9
+Computational Performance 2: 67.59
+Computational Performance 3: 46.71
+Computational Performance 4: 184.66
+Computational Performance 5: 604.6
