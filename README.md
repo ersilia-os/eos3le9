@@ -3,7 +3,7 @@
 Predicts cytotoxicity in HepG2 liver carcinoma cells, the standard counter- screen for separating genuine antiparasitic activity from general cell killing. Ersilia trained two LazyQSAR classifiers on 72-hour IC50 data for 1,335 compounds from Medicines for Malaria Venture, calling toxicity below 5 uM (104 toxic) or 10 uM (746 toxic), with AUROC 0.88 and 0.79 in five-fold out-of-fold validation. Outputs are ranks against 50,000 drug-like molecules. A single cell line does not anticipate organ-level or metabolism-dependent toxicity.
 
 This model was incorporated on 2023-08-24.
-Last packaged on 2025-11-21.
+Last packaged on 2026-11-23.
 
 ## Information
 ### Identifiers
@@ -44,12 +44,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `23`
 - **Environment Size (Mb):** `6954`
-- **Image Size (Mb):** `7505.03`
+- **Image Size (Mb):** `3284.6`
 
 **Computational Performance (seconds):**
-- 10 inputs: `44.9`
-- 100 inputs: `46.71`
-- 10000 inputs: `604.6`
+- 10 inputs: `37.45`
+- 100 inputs: `33.17`
+- 10000 inputs: `333.27`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-qsar](https://github.com/ersilia-os/lazy-qsar)
