@@ -1,6 +1,6 @@
 # HepG2 Toxicity (MMV Data)
 
-Predicts cytotoxicity in HepG2 liver carcinoma cells, the standard counter-screen for separating genuine antiparasitic activity from general cell killing. Ersilia trained two LazyQSAR classifiers on IC50 measurements for 1,335 compounds after a 72-hour exposure, contributed by Medicines for Malaria Venture, one calling toxicity below 5 uM and the other below 10 uM, reaching AUROCs of 0.85 and 0.75 in three-fold cross-validation. A single cell line does not anticipate organ-level or metabolism-dependent toxicity.
+Predicts cytotoxicity in HepG2 liver carcinoma cells, the standard counter- screen for separating genuine antiparasitic activity from general cell killing. Ersilia trained two LazyQSAR classifiers on 72-hour IC50 data for 1,335 compounds from Medicines for Malaria Venture, calling toxicity below 5 uM (104 toxic) or 10 uM (746 toxic), with AUROC 0.88 and 0.79 in five-fold out-of-fold validation. Outputs are ranks against 50,000 drug-like molecules. A single cell line does not anticipate organ-level or metabolism-dependent toxicity.
 
 This model was incorporated on 2023-08-24.
 Last packaged on 2025-11-21.
@@ -24,13 +24,13 @@ Last packaged on 2025-11-21.
 ### Output
 - **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of HepG2 cytotoxicity at IC50 cut-offs of 5 and 10 uM.
+- **Interpretation:** Rank of predicted HepG2 cytotoxicity at IC50 cut-offs of 5 and 10 uM, against 50,000 drug-like molecules; 0.65 is more toxic than 99% of them.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| ic50_hepg2_72h_5um | float | high | Classification score for HepG2 cytotoxicity based on an IC50 cut-off of 5uM |
-| ic50_hepg2_72h_10um | float | high | Classification score for HepG2 cytotoxicity based on an IC50 cut-off of 10uM |
+| ic50_hepg2_72h_5um_rank | float | high | Rank score of the compound's predicted HepG2 cytotoxicity at an IC50 cut-off of 5 uM (72 h), calibrated against a reference library of 50K drug-like molecules so that 0.65 is more toxic than 99% of them. Recommended threshold: 0.65. |
+| ic50_hepg2_72h_10um_rank | float | high | Rank score of the compound's predicted HepG2 cytotoxicity at an IC50 cut-off of 10 uM (72 h), calibrated against a reference library of 50K drug-like molecules so that 0.65 is more toxic than 99% of them. Recommended threshold: 0.65. |
 
 
 ### Source and Deployment
